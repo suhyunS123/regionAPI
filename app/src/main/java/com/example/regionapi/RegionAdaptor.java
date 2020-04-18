@@ -52,7 +52,8 @@ public class RegionAdaptor extends BaseAdapter {
         if(convertView == null){
             convertView = LayoutInflater.from(context).inflate(R.layout.listview_region,null);
 
-            name_textView = (TextView) convertView.findViewById(R.id.my_listview);
+            name_textView = (TextView) convertView.findViewById(R.id.name_textview);
+            //**************
             name_textView.setText(list_regionArrayList.get(position).getName());
 
         }

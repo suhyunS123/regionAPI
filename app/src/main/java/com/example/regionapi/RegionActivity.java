@@ -53,7 +53,6 @@ public class RegionActivity extends AppCompatActivity {
         myRegionAdaptor = new
                 RegionAdaptor(RegionActivity.this, list_regionArrayList);
 //listview에 setAdapter을 통해 myReionAdaptor연결
-        android.R.layout.simple_list_item_single_choice, list_regionArrayList);
         listView.setAdapter(myRegionAdaptor);
 
         //listView에서 클릭 했을 때 색 변화(하나만 선택)
@@ -62,6 +61,7 @@ public class RegionActivity extends AppCompatActivity {
 
             @Override
             public void onItemClick(AdapterView arg0, View view, int position,
+
                                     long itemId) {
 //listView를 돌면서 선택된 list만 파란색으로 표시한다.
 
@@ -78,7 +78,6 @@ public class RegionActivity extends AppCompatActivity {
                 if (textView != null) {
                     textView.setTextColor(Color.BLUE);
                 }
-
             }
         });
 
