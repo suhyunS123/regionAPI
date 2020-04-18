@@ -58,6 +58,7 @@ public class RegionAdaptor extends BaseAdapter {
         }
         return convertView;
     }
+
     public void addRegion(String code, String name, String rnum) {
        Region Ritem = new Region();
 
@@ -66,6 +67,7 @@ public class RegionAdaptor extends BaseAdapter {
         Ritem.setRnum(rnum);
         list_regionArrayList.add(Ritem);
     }
+
     public void removeAll() {
         list_regionArrayList.removeAll(list_regionArrayList);
     }
